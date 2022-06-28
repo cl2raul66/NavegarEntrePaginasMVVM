@@ -1,10 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.DependencyInjection;
 using CommunityToolkit.Mvvm.Input;
-using PaginasMVVM.Utiles;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using PaginasMVVM.Servicios;
+//using PaginasMVVM.Utiles;
 
 namespace PaginasMVVM.VistasModelo
 {
@@ -14,8 +12,8 @@ namespace PaginasMVVM.VistasModelo
         {
             CerrarClick = new AsyncRelayCommand(async () =>
             {
-                //await Ioc.Default.GetService<NavegacionVistaModelo>().RegresarDelModal();
-                await Navegacion.RegresarDelModal();
+                await Ioc.Default.GetService<INavegacionServicio>().RegresarDelModal();
+                //await Navegacion.RegresarDelModal();
             });
         }
 

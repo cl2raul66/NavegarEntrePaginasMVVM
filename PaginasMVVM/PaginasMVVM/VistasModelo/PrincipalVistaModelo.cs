@@ -2,12 +2,7 @@
 using CommunityToolkit.Mvvm.DependencyInjection;
 using CommunityToolkit.Mvvm.Input;
 using PaginasMVVM.Servicios;
-using PaginasMVVM.Utiles;
-using PaginasMVVM.Vistas;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Xamarin.Forms;
+//using PaginasMVVM.Utiles;
 
 namespace PaginasMVVM.VistasModelo
 {

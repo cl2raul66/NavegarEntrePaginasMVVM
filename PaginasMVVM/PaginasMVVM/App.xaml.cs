@@ -19,7 +19,6 @@ namespace PaginasMVVM
                 //.AddSingleton<INavegacionServicio>(new NavegacionServicio(new Principal()))
                 .AddSingleton<INavegacionServicio, NavegacionServicio>()
                 .AddTransient<PrincipalVistaModelo>()
-                .AddTransient<NavegacionVistaModelo>()
                 .AddTransient<Operaciones1VistaModelo>()
                 .AddTransient<Operaciones2VistaModelo>()
                 .BuildServiceProvider()
