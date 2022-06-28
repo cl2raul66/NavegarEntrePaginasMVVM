@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PaginasMVVM.Vistas.Operaciones1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:PaginasMVVM.VistasModelo" 
+    x:DataType="vm:Operaciones1VistaModelo"
+    Title="Operaciones 1">
+
+    <!--<ContentPage.BindingContext>
+        <vm:Operaciones1VistaModelo/>
+    </ContentPage.BindingContext>-->
+    
+    <ContentPage.Content>
+        <StackLayout            
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+            <Label
+                Text="Welcome to Operaciones 1!" />
+            <Button
+                TextColor="Blue"
+                Text="Cerrar"
+                Command="{Binding CerrarClick}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
