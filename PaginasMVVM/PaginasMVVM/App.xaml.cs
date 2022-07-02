@@ -16,7 +16,6 @@ namespace PaginasMVVM
             InitializeComponent();
 
             Ioc.Default.ConfigureServices(new ServiceCollection()
-                //.AddSingleton<INavegacionServicio>(new NavegacionServicio(new Principal()))
                 .AddSingleton<INavegacionServicio, NavegacionServicio>()
                 .AddTransient<PrincipalVistaModelo>()
                 .AddTransient<Operaciones1VistaModelo>()
